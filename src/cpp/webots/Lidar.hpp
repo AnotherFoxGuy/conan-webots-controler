@@ -16,7 +16,7 @@
 #define LIDAR_HPP
 
 #include <webots/Device.hpp>
-#include "../../c/webots/lidar_point.h"
+#include "webots/lidar_point.h"
 
 namespace webots {
   typedef WbLidarPoint LidarPoint;

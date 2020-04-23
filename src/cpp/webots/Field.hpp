@@ -18,7 +18,7 @@
 #define WB_USING_CPP_API
 #include <string>
 #include <webots/Node.hpp>
-#include "../../c/webots/types.h"
+#include "webots/types.h"
 
 #ifdef MF_STRING
 #undef MF_STRING

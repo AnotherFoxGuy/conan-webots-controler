@@ -16,7 +16,7 @@
 #define IMAGE_REF_HPP
 
 #define WB_USING_CPP_API
-#include "../../c/webots/types.h"
+#include "webots/types.h"
 
 namespace webots {
   class ImageRef {

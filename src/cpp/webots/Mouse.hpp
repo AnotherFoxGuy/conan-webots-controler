@@ -15,7 +15,7 @@
 #ifndef MOUSE_HPP
 #define MOUSE_HPP
 
-#include "../../c/webots/mouse_state.h"
+#include "webots/mouse_state.h"
 
 namespace webots {
   typedef WbMouseState MouseState;

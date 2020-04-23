@@ -16,7 +16,7 @@
 #define RADAR_HPP
 
 #include <webots/Device.hpp>
-#include "../../c/webots/radar_target.h"
+#include "webots/radar_target.h"
 
 namespace webots {
   typedef WbRadarTarget RadarTarget;

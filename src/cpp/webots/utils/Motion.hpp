@@ -17,7 +17,7 @@
 
 #define WB_USING_CPP_API
 #include <string>
-#include "../../../c/webots/types.h"
+#include "webots/types.h"
 
 namespace webots {
   class Motion {

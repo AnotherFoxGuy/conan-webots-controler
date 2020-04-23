@@ -16,7 +16,7 @@
 #define CAMERA_HPP
 
 #include <webots/Device.hpp>
-#include "../../c/webots/camera_recognition_object.h"
+#include "webots/camera_recognition_object.h"
 
 namespace webots {
   typedef WbCameraRecognitionObject CameraRecognitionObject;

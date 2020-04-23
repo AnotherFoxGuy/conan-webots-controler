@@ -1,0 +1,14 @@
+project(Controller C)
+
+file(GLOB_RECURSE SOURCE_FILES LIST_DIRECTORIES FALSE "*.h" "*.c")
+
+include_directories("${CMAKE_SOURCE_DIR}/c")
+
+add_library(${PROJECT_NAME} ${SOURCE_FILES})
+
+install(TARGETS ${PROJECT_NAME} 
+	LIBRARY DESTINATION lib
+	ARCHIVE DESTINATION lib
+	PUBLIC_HEADER DESTINATION include
+)
+install(DIRECTORY "${CMAKE_SOURCE_DIR}/c/webots" DESTINATION "include")

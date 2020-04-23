@@ -8,14 +8,8 @@ environment:
     CONAN_LOGIN_USERNAME: "anotherfoxguy"
     CONAN_CHANNEL: "stable"
     CONAN_UPLOAD: "https://api.bintray.com/conan/anotherfoxguy/conan-packages"
-
-    matrix:
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 12
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-          CONAN_VISUAL_VERSIONS: 14
-        - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-          CONAN_VISUAL_VERSIONS: 15
+    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    CONAN_VISUAL_VERSIONS: 15
 
 
 install:

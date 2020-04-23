@@ -4,7 +4,7 @@ file(GLOB_RECURSE SOURCE_FILES LIST_DIRECTORIES FALSE "*.hpp" "*.cpp")
 
 include_directories(.)
 
-add_library(${PROJECT_NAME} ${SOURCE_FILES})
+add_library(${PROJECT_NAME} SHARED ${SOURCE_FILES})
 
 install(TARGETS ${PROJECT_NAME}
 	LIBRARY DESTINATION lib

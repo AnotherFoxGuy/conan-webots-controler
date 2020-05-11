@@ -5,10 +5,9 @@ from conans.tools import os_info, SystemPackageTool
 class WebotscontrollerConan(ConanFile):
     name = "webots-controller"
     version = "R2020a-rev1"
-    license = "<Put the package license here>"
-    author = "<Put your name here> <And your email here>"
-    url = "<Package recipe repository url here, for issues about the package>"
-    description = "<Description of Webotscontroller here>"
+    author = "Edgar (Edgar@AnotherFoxGuy.com)"
+    url = "https://github.com/AnotherFoxGuy/conan-webots-controler"
+    description = "Cpp controller for Webots"
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
     exports_sources = ["src/*", "prebuild/*"]
@@ -29,3 +28,5 @@ class WebotscontrollerConan(ConanFile):
 
     def package_info(self):
         self.cpp_info.libs = tools.collect_libs(self)
+        if tools.os_info.is_linux:
+            self.cpp_info.system_libs = ['dl', 'rt']
